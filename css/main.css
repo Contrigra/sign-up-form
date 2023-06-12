@@ -4,7 +4,7 @@
 
 :root {
   --backgroundcolor: #F2EDF4;
-  --color-theme_img_1-2-hex: #D9078F;
+  --strong-pink: #D9078F;
   --color-theme_img_1-3-hex: #A65BD9;
   --color-theme_img_1-5-hex: #F2B05E;
   --color-theme_img_1-1-hex: #F2BDD6;
@@ -28,8 +28,7 @@
 }
 
 .ai-image-text {
-  background-color: rgba(0, 0, 0, 0.5
-  );
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   margin-bottom: 10em;
@@ -49,18 +48,21 @@
   padding: 32px;
 }
 
+.heart {
+  color: var(--strong-pink);
+}
+
 .form-header {
   font-weight: bold;
   font-size: large;
 }
-/* TODO add shadow */
+/* TODO 1. add shadow
+    2. Make it spread horizontally */
+
 .form-body {
   background-color: #F5FAFD;
 }
 
-.heart {
-  color: #D9078F;
-}
 
 body {
   background-color: var(--backgroundcolor);
