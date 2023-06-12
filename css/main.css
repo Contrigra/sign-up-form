@@ -1,16 +1,52 @@
 /* Color Theme Swatches in Hex */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
 :root {
-  --backgroundcolor: #E9F1F2;
+  --backgroundcolor: #F2EDF4;
 --color-theme_img_1-2-hex: #D9078F;
 --color-theme_img_1-3-hex: #A65BD9;
 --color-theme_img_1-5-hex: #F2B05E;
 --color-theme_img_1-1-hex: #F2BDD6;
+font-family: 'Roboto', sans-serif;
+}
+/*  --backgroundcolor: #E9F1F2;*/
+
+
+
+
+.ai-image {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: end;
+  background-image: url("../img/img_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-width: 10%;
+  max-width: 33vw;
+}
+
+.ai-image-text {
+  background-color: rgba(0,0,0, 0.5
+  );
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10em;
+  
+}
+
+.ai-image-text p {
+  color: floralwhite;
+  font-weight: bold;
+  font-size: x-large;
+  letter-spacing: 1px;
 }
 
 
-/* Somehow there is a small gap if I make it 100vh */
-.ai-picture {
-  height: 100vh;
+.form-block {
+  align-self: center;
 }
 
 body {
