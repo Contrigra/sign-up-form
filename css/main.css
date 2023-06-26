@@ -2,6 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto");
 
+* {
+  box-sizing: border-box;
+}
+
+/* #FFFFE3 */
 :root {
   --backgroundcolor: #F2EDF4;
   --strong-pink: #D9078F;
@@ -11,20 +16,27 @@
   font-family: 'Roboto', sans-serif;
 }
 
-/*  --backgroundcolor: ;*/
 
+
+
+body {
+  background-color: var(--backgroundcolor);
+  overflow: clip; /* Hide scrollbars */
+  display: flex;
+}
 
 .ai-image {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: end;
-  background-image: url("../img/img_1.png");
+  background-image: url("../img/img_3.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 60%;
   height: 100vh;
-  min-width: 10%;
-  max-width: 33vw;
+  min-width: 34vw;
+  max-width: 40vw;
 }
 
 .ai-image-text {
@@ -45,30 +57,85 @@
 
 .form-block {
   align-self: center;
-  padding: 32px;
+
 }
 
 .heart {
   color: var(--strong-pink);
 }
 
+
 .form-header {
   font-weight: bold;
-  font-size: large;
+  font-size: x-large;
+  margin: 32px;
 }
+
 /* TODO 1. add shadow
     2. Make it spread horizontally */
 
 .form-body {
+  padding: 16px 32px 32px;
   background-color: #F5FAFD;
+  margin-bottom: 20px;
+  width: 66vw;
+  box-shadow: 5px 5px 5px 0 #999999;
 }
 
-
-body {
-  background-color: var(--backgroundcolor);
-  overflow: clip; /* Hide scrollbars */
+/* form within the body */
+form {
   display: flex;
+  flex-flow: column;
+  gap: 20px;
 }
 
 
+.row {
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+  flex: 1 1 auto;
+}
 
+.form-body > h1 {
+  margin-top: 8px;
+}
+
+label {
+  display: flex;
+  flex-flow: column;
+  max-width: 260px;
+  flex-grow: 1;
+  gap: 2px;
+}
+
+input {
+  height: 32px;
+  border-radius: 6px;
+  padding: 8px;
+  border: 2px solid #E5E7EB
+}
+
+input:focus {
+  outline-color: #F2BDD6;
+}
+
+.form-footer {
+  padding-left: 32px;
+}
+
+.button-create-account {
+  border-radius: 6px;
+  width: 230px;
+  height: 44px;
+  margin-bottom: 32px;
+  box-shadow: 2px 2px 3px #999999;
+  background-color: #FFFFE3;
+}
+
+a {
+  color: #A65BD9;
+  font-weight: bolder;
+  text-decoration: none;
+
+}

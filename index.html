@@ -22,17 +22,47 @@
       <p>This is a fan page of the greatest idol of all
         time, Hoshino Ai! Join the community of fans, find your
         friends! </p>
-      <p>Some day we all <em>meet</em> with Ai! <span class="heart">❤</span></p>
+      <p>Some day we all <em>meet</em> with Ai! <span class="heart">❤</span>
+      </p>
     </div>
   </div>
   <div class="form-body">
-    <h1>Form info and call to action</h1>
-    <ul>1</ul>
-    <ul>2</ul>
-    <ul>3</ul>
+    <h1>Sign up</h1>
+
+    <form action="https://httpbin.org/post" id="sign-up-form" method="post">
+      <div class="row">
+        <label>First Name
+          <input type="text" name="first_name" placeholder="Aqua">
+        </label>
+
+        <label>Second Name
+          <input type="text" name="second_name" placeholder="Hoshino">
+        </label>
+      </div>
+
+      <div class="row">
+        <label>Email
+          <input type="text" name="email">
+        </label>
+
+        <label>Phone Number
+          <input type="text" name="phone_number">
+        </label>
+      </div>
+
+      <div class="row">
+        <label>Password
+        <input type="text" name="password">
+      </label>
+        <label>Confirm Password
+          <input type="text" name="confirm_password">
+        </label>
+      </div>
+
+    </form>
   </div>
   <div class="form-footer">
-    <button class="button-create-account">Sign Up!</button>
+    <button type="submit" form="sign-up-form" class="button-create-account">Sign Up!</button>
     <div class="log-in">Already have an account? <a href="login">Log in</a>
     </div>
   </div>
