@@ -8,19 +8,13 @@
 
 /* #FFFFE3 */
 :root {
-  --backgroundcolor: #F2EDF4;
+  --background-color: ;
   --strong-pink: #D9078F;
-  --color-theme_img_1-3-hex: #A65BD9;
-  --color-theme_img_1-5-hex: #F2B05E;
-  --color-theme_img_1-1-hex: #F2BDD6;
   font-family: 'Roboto', sans-serif;
 }
 
 
-
-
 body {
-  background-color: var(--backgroundcolor);
   overflow: clip; /* Hide scrollbars */
   display: flex;
 }
@@ -30,7 +24,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
   justify-content: end;
-  background-image: url("../img/img_3.png");
+  background-image: url("../img/img.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60%;
@@ -41,6 +35,7 @@ body {
 
 .ai-image-text {
   background-color: rgba(0, 0, 0, 0.5);
+
   display: flex;
   justify-content: center;
   margin-bottom: 10em;
@@ -62,21 +57,21 @@ body {
 
 .heart {
   color: var(--strong-pink);
+  font-style: normal;
 }
 
-
 .form-header {
-  font-weight: bold;
+  font-family: 'Lucida Bright', 'sans-serif';
+  font-weight: lighter;
+  font-style: italic;
   font-size: x-large;
   margin: 32px;
 }
 
-/* TODO 1. add shadow
-    2. Make it spread horizontally */
-
 .form-body {
   padding: 16px 32px 32px;
-  background-color: #F5FAFD;
+  background-color: #EEE5EA;
+
   margin-bottom: 20px;
   width: 66vw;
   box-shadow: 5px 5px 5px 0 #999999;
@@ -113,7 +108,8 @@ input {
   height: 32px;
   border-radius: 6px;
   padding: 8px;
-  border: 2px solid #E5E7EB
+  border: 2px none #E5E7EB;
+  border-bottom: 2px solid #F2BDD6;
 }
 
 input:focus {
@@ -126,16 +122,16 @@ input:focus {
 
 .button-create-account {
   border-radius: 6px;
+  border: 1px solid black;
   width: 230px;
   height: 44px;
   margin-bottom: 32px;
   box-shadow: 2px 2px 3px #999999;
-  background-color: #FFFFE3;
+  background-color: #F7DFDB;
 }
 
 a {
-  color: #A65BD9;
+  color: #2F3657;
   font-weight: bolder;
   text-decoration: none;
-
 }
